@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "PathLearn",
+    "slug": "pathlearn-app",
+    "scheme": "pathlearn",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/pathlearn-logo.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/pathlearn-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "bundleIdentifier": "com.pathlearn.app",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "PathLearn usa tu ubicación para centrar el mapa y sugerir puntos de interés cercanos.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/pathlearn-logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/pathlearn-logo.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "d593c7f2-9505-4e44-bacb-14cf791f33c1"
+      }
+    },
+    "owner": "alexdev.codes"
+  }
+}
